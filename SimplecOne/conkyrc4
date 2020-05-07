@@ -12,11 +12,11 @@
 #-------------------------------#
 
 #Text Color
-color1 67809F
+color1 FFFFFF
 #Icons Color
-color2 AAA69D
+color2 FFFFFF
 #Graph Color
-color3 BFBFBF
+color3 FFFFFF
 
 update_interval 1
 double_buffer yes
@@ -55,4 +55,3 @@ ${goto 30}$color2${font LineAwesomeMod :size=14}p$color1 $font Load Average(1min
 ${alignr 30}$color3${loadgraph 30,270 -l}$color
 ${goto 30}$color2${font LineAwesomeMod :size=14}-$color1 $font Memory ${alignr 30}${mem} - ${memperc}%
 ${alignr 30}$color3${memgraph 30,270 -l}$color1
-
