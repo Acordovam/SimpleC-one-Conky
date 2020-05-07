@@ -12,11 +12,11 @@
 #-------------------------------#
 
 #Text Color
-color1 67809F
+color1 fff
 #Icons Color
-color2 AAA69D
+color2 b2bec3
 #Graph Color
-color3 BFBFBF
+color3 fff
 
 update_interval 1
 double_buffer yes
@@ -53,4 +53,3 @@ ${alignr 65}${voffset -60}${exec date +"%A" | tr [a-z-ç] [A-Z-Ç]}
 ${alignr 126}${voffset -20}${font Roboto Condensed:size=50}${exec date +%d}.$font
 ${goto 205}${voffset -48}${font Roboto Condensed:size=34}${exec date +%m}.$font${alignr 30}${exec date +%Y}
 ${voffset -120}
-
