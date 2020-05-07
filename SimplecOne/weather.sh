@@ -11,9 +11,9 @@
 ########################################################
 
 UNITY="c"
-API_KEY="YOUR API KEY"
-CITY="New York"
-COUNTRY="us"
+API_KEY="0bc56570a42e7a3e69caaa99e883ae29"
+CITY="Mixco"
+COUNTRY="GT"
 
 ########################################################
 rm ~/.cache/weather.txt
@@ -55,4 +55,3 @@ pressure=$(echo $data | sed -e 's/,/\n/g' | grep pressure | cut -d":" -f2)
 wind=$(echo $data | sed -e 's/,/\n/g' | grep wind | cut -d":" -f3)
 update=$(date +"%Y-%m-%d %H:%M:%S")
 echo -e "city>$city\ncountry>$country\ntemp>$temp\ndescription>$description\nmin>$temp_min\nmax>$temp_max\nhumidity>$humidity\npressure>$pressure\nwind>$wind\nupdate>$update" > ~/.cache/weather.txt
-
